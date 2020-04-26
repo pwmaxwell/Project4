@@ -11,21 +11,18 @@ class Testing {
 	private HealthyFood vegatables = new HealthyFood(3.00);
 	@Test
 	void testWine() {
-		//wine.accept(taxation);
 		double wineAfterTax = wine.accept(taxation);
 		assertEquals(wineAfterTax, 1.15);
 	}
 	
 	@Test
 	void testSoda() {
-		//soda.accept(taxation);
 		double sodaAfterTax = soda.accept(taxation);
 		assertEquals(sodaAfterTax, 2.24);
 	}
 	
 	@Test
 	void testvegatables() {
-		//vegatables.accept(taxation);
 		double vegatablesAfterTax = vegatables.accept(taxation);
 		assertEquals(vegatablesAfterTax, 3.00);
 	}
